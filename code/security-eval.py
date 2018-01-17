@@ -13,4 +13,16 @@ DWb=[17,6]
 EWa=[17,6]
 EWb=[22,6]
 
-print EWb[0]
+angAa=120
+angAb=90
+
+angBb=300
+angBb=270
+
+camAa=d
+camAb=
+camAc=
+
+camBa=b
+camBb=
+cambc=
