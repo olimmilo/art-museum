@@ -13,4 +13,4 @@ DWb=[17,6]
 EWa=[17,6]
 EWb=[22,6]
 
-print EWb(0)
+print EWb[0]
