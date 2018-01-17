@@ -28,8 +28,8 @@ camBb=[0,0]
 cambc=[0,0]
 
 #finds the equations and limits for the moving walls
-AWm=(AWa[1]-ABb[1])/(AWa[0]-ABb[0])
-
+AWm=(AWa[1]-AWb[1])/(AWa[0]-AWb[0])
+print AWm
 #finds the intersection for camera views
 
 
