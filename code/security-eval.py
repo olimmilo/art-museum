@@ -38,8 +38,8 @@ testam=-1
 
 def line(a1, b1, m1, a2, b2, m2):
   int=[0,0]
-  int[0]=((m1*a1[0])-a1[1]-(m2*a2[0])+a2[1])/(m1*m2)
-  int[1]=m1*(int[0]-a1[0])+a1[1]
+  int[0]=((m1*a1[0])-a1[1]-(m2*a2[0])+a2[1])/(m1-m2)
+  int[1]=m1]*(int[0]-a1[0])+a1[1]
   return int
 
 #def vertline(a, b, y):
