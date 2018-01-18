@@ -45,7 +45,10 @@ def vertline(a, b, y):
 #if((AWa[0]-AWb[0]) == 0):
  # UNDEFINEDA=true
 #else:
-AWm=(AWa[1]-AWb[1])/(AWa[0]-AWb[0])
+
+aa=AWa[1]-AWb[1]
+bb=AWa[0]-AWb[0]
+AWm=(aa)/(bb)
 
 #finds the intersection for camera views
 
