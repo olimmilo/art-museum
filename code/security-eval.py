@@ -27,15 +27,6 @@ camBa=b
 camBb=[0,0]
 cambc=[0,0]
 
-testa=[1,1]
-testb=[10,10]
-testm=1
-
-testaa=[9,1]
-testab=[1,9]
-testam=-1
-
-
 def line(a1, b1, m1, a2, b2, m2):
   int=[0,0]
   int[0]=((m1*a1[0])-a1[1]-(m2*a2[0])+a2[1])/(m1-m2)
@@ -45,19 +36,19 @@ def line(a1, b1, m1, a2, b2, m2):
       t=true
     else:
       t=false
-  elif a1[0] <= a1[0]:
+  elif a1[0] <= b1[0]:
     if (a1[0] >= int[0]) and (int[0] >= b1[0]):
       t=true
     else:
       t=false
   if t == true:
-    if a1[0] >= b1[0]:
-      if (b1[0] >= int[0]) and (int[0] >= a1[0]):
+    if a1[1] >= b1[1]:
+      if (b1[1] >= int[1]) and (int[1] >= a1[1]):
         t=true
       else:
         t=false
-    elif a1[0] <= a1[0]:
-      if (a1[0] >= int[0]) and (int[0] >= b1[0]):
+    elif a1[1] <= b1[1]:
+      if (a1[1] >= int[1]) and (int[1] >= b1[1]):
         t=true
       else:
         t=false
@@ -65,11 +56,35 @@ return int, t
 
 def vertline(a1, b1, a2, b2):
   if (a1[0]-b1[0]) == 0:
+    int=[a1[0],0]
     m=(a2[1]-b2[1])/(a2[0]-b2[0])
-    
+    int[1]=(m*(a1[0]-a2[0]))+a2[1]
   else:
+    int=[a2[0],0]
     m=(a1[1]-b1[1])/(a1[0]-b1[0])
-
+    int[1]=(m*(a2[0]-a1[0]))+a1[1]
+  if a1[0] >= b1[0]:
+    if (b1[0] >= int[0]) and (int[0] >= a1[0]):
+      t=true
+    else:
+      t=false
+  elif a1[0] <= b1[0]:
+    if (a1[0] >= int[0]) and (int[0] >= b1[0]):
+      t=true
+    else:
+      t=false
+  if t == true:
+    if a1[1] >= b1[1]:
+      if (b1[1] >= int[1]) and (int[1] >= a1[1]):
+        t=true
+      else:
+        t=false
+    elif a1[1] <= b1[1]:
+      if (a1[1] >= int[1]) and (int[1] >= b1[1]):
+        t=true
+      else:
+        t=false
+  return int, t
 #finds the equations and limits for the moving walls
 if (AWa[0]-AWb[0]) == 0:
   UNDEFINEDA=true
