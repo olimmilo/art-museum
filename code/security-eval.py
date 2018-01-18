@@ -61,9 +61,14 @@ def line(a1, b1, m1, a2, b2, m2):
         t=true
       else:
         t=false
-return int, 
+return int, t
 
-#def vertline(a, b, y):
+def vertline(a1, b1, a2, b2):
+  if (a1[0]-b1[0]) == 0:
+    m=(a2[1]-b2[1])/(a2[0]-b2[0])
+    
+  else:
+    m=(a1[1]-b1[1])/(a1[0]-b1[0])
 
 #finds the equations and limits for the moving walls
 if (AWa[0]-AWb[0]) == 0:
