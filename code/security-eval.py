@@ -27,6 +27,11 @@ camBa=b
 camBb=[0,0]
 cambc=[0,0]
 
+testa=[0,0]
+testb=[10,10]
+testm=1
+
+
 def line(a1, b1, m1, a2, b2, m2):
   int=[0,0]
   int[0]=((m1*a1[0])-a1[1]-(m2*a2[0])+a2[1])/(m1*m2)
@@ -60,3 +65,8 @@ else:
 
 
 #divides sumative coverage by all surface on which paintings can be hung and multiplies by 100 to give percent
+
+
+int=line(AWa, AWb, AWm, testa, testb, testm)
+
+print(int)
