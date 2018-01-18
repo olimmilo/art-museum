@@ -27,12 +27,12 @@ camBa=b
 camBb=[0,0]
 cambc=[0,0]
 
-testa=[0,0]
+testa=[1,1]
 testb=[10,10]
 testm=1
 
-testaa=[10,0]
-testab=[0,10]
+testaa=[9,1]
+testab=[1,9]
 testam=-1
 
 
