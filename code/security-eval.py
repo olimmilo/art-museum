@@ -41,10 +41,10 @@ def line(a1, b1, m1, a2, b2, m2):
 def vertline(a, b, y):
 
 #finds the equations and limits for the moving walls
-#(AWa[0]-AWb[0])
-if(1 == 0):
-  UNDEFINEDA=true
-else:
+
+#if((AWa[0]-AWb[0]) == 0):
+ # UNDEFINEDA=true
+#else:
   AWm=(AWa[1]-AWb[1])/(AWa[0]-AWb[0])
 
 #finds the intersection for camera views
