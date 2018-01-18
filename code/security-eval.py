@@ -27,10 +27,15 @@ camBa=b
 camBb=[0,0]
 cambc=[0,0]
 
+def line(a, b, m, x)
+
+def vertline(a, b, y)
+
 #finds the equations and limits for the moving walls
-if (AWa[1]-AWb[1]) == 0:
-  print("dumbass")
-AWm=(AWa[1]-AWb[1])/(AWa[0]-AWb[0])
+if (AWa[0]-AWb[0]) == 0:
+  UNDEFINEDA=true
+else:
+  AWm=(AWa[1]-AWb[1])/(AWa[0]-AWb[0])
 
 #finds the intersection for camera views
 
