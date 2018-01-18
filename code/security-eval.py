@@ -40,7 +40,28 @@ def line(a1, b1, m1, a2, b2, m2):
   int=[0,0]
   int[0]=((m1*a1[0])-a1[1]-(m2*a2[0])+a2[1])/(m1-m2)
   int[1]=(m1*(int[0]-a1[0]))+a1[1]
-  return int
+  if a1[0] >= b1[0]:
+    if (b1[0] >= int[0]) and (int[0] >= a1[0]):
+      t=true
+    else:
+      t=false
+  elif a1[0] <= a1[0]:
+    if (a1[0] >= int[0]) and (int[0] >= b1[0]):
+      t=true
+    else:
+      t=false
+  if t == true:
+    if a1[0] >= b1[0]:
+      if (b1[0] >= int[0]) and (int[0] >= a1[0]):
+        t=true
+      else:
+        t=false
+    elif a1[0] <= a1[0]:
+      if (a1[0] >= int[0]) and (int[0] >= b1[0]):
+        t=true
+      else:
+        t=false
+return int, 
 
 #def vertline(a, b, y):
 
@@ -70,7 +91,3 @@ else:
 
 #divides sumative coverage by all surface on which paintings can be hung and multiplies by 100 to give percent
 
-
-int=line(testaa, testab, testam, testa, testb, testm)
-
-print(int)
