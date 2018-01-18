@@ -41,9 +41,8 @@ def line(a1, b1, m1, a2, b2, m2):
 def vertline(a, b, y):
 
 #finds the equations and limits for the moving walls
-verta = (AWa[0]-AWb[0])
 
-if(verta == 0):
+if((AWa[0]-AWb[0]) == 0):
   UNDEFINEDA=true
 else:
   AWm=(AWa[1]-AWb[1])/(AWa[0]-AWb[0])
