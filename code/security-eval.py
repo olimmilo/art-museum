@@ -52,7 +52,7 @@ def line(a1, b1, m1, a2, b2, m2):
         t=true
       else:
         t=false
-return int, t
+ return int, t
 
 def vertline(a1, b1, a2, b2):
   if (a1[0]-b1[0]) == 0:
