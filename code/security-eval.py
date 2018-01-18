@@ -31,6 +31,10 @@ testa=[0,0]
 testb=[10,10]
 testm=1
 
+testaa=[10,0]
+testab=[0,10]
+testam=-1
+
 
 def line(a1, b1, m1, a2, b2, m2):
   int=[0,0]
@@ -67,6 +71,6 @@ else:
 #divides sumative coverage by all surface on which paintings can be hung and multiplies by 100 to give percent
 
 
-int=line(AWa, AWb, AWm, testa, testb, testm)
+int=line(testaa, testab, testam, testa, testb, testm)
 
 print(int)
