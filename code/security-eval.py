@@ -27,9 +27,13 @@ camBa=b
 camBb=[0,0]
 cambc=[0,0]
 
-def line(a, b, m, x)
+def line(a1, b1, m1, a2, b2, m2):
+  int=[0,0]
+  int[0]=((m1*a1[0])-a1[1]-(m2*a2[0])+a2[1])/(m1*m2)
+  int[1]=m1*(int[0]-a1[0])+a1[1]
+  return int
 
-def vertline(a, b, y)
+def vertline(a, b, y):
 
 #finds the equations and limits for the moving walls
 if (AWa[0]-AWb[0]) == 0:
