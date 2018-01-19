@@ -65,16 +65,16 @@ camAc=d
 camBa=[0,0]
 
 if UNDEFINEDCAMBa == 1:
-  camAa1=[b[0], 19.5]
+  camBa1=[b[0], 19.5]
 else:
-  camAa1=[(b[0]+math.sin(math.radians(angBa))),(b[1]+math.sin(math.radians(angBa)))]
+  camBa1=[(b[0]+math.sin(math.radians(angBa))),(b[1]+math.sin(math.radians(angBa)))]
 
 camBb=[0,0]
 
 if UNDEFINEDCAMBb == 1:
-  camAa1=[b[0], 19.5]
+  camBb1=[b[0], 19.5]
 else:
-  camAa1=[(b[0]+math.sin(math.radians(angBb))),(b[1]+math.sin(math.radians(angBb)))]
+  camBb1=[(b[0]+math.sin(math.radians(angBb))),(b[1]+math.sin(math.radians(angBb)))]
 
 cambc=b
 
