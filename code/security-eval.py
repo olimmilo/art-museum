@@ -48,15 +48,34 @@ else:
 
 
 camAa=[0,0]
-camAa1=(AaCAMm*(math.pi))/180
+
+if UNDEFINEDCAMAa == 1:
+  camAa1=[d[0], 0.5]
+else:
+  camAa1=
 camAb=[0,0]
-camAb1=(AbCAMm*(math.pi))/180
+
+if UNDEFINEDCAMAb == 1:
+  camAb1=[d[0], 0.5]
+else:
+  camAb1=
+
 camAc=d
 
 camBa=[0,0]
-camBa1=(BaCAMm*(math.pi))/180
+
+if UNDEFINEDCAMBa == 1:
+  camAa1=[d[0], 0.5]
+else:
+  camAa1=
+
 camBb=[0,0]
-camBb1=(BbCAMm*(math.pi))/180
+
+if UNDEFINEDCAMBb == 1:
+  camAa1=[d[0], 0.5]
+else:
+  camAa1=
+
 cambc=b
 
 def line(a1, b1, m1, a2, b2, m2):
