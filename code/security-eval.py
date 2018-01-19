@@ -21,7 +21,7 @@ angAb=90
 if angAa == 90 or angAa == 270:
   UNDEFINEDCAMAa=1
 else:
-  UNDEFINEDCAMAa=o
+  UNDEFINEDCAMAa=0
   AaCAMm=math.tan(math.radians(angAa))
 
 if angAb == 90 or angAb == 270:
