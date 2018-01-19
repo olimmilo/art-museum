@@ -173,7 +173,7 @@ else:
   intCAMAaA,tCAMAaA=line(AWa,AWb,AWm,camAc,AaCAMm)
 
 #finds the coverage if the camera view is on the same wall/wall plane
-print(camAa1,tCAMAaA,intCAMaA)
+print(camAa1,tCAMAaA,intCAMAaA)
 
 #finds the coverage is the camera view falls upon more than one wall plane
 
