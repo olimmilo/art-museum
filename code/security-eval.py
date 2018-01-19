@@ -47,13 +47,17 @@ else:
   BbCAMm=math.tan(math.radians(angBb))
 
 
-camAa=d
+camAa=[0,0]
+camAa1=(AaCAMm*(math.pi))/180
 camAb=[0,0]
-camAc=[0,0]
+camAb1=(AbCAMm*(math.pi))/180
+camAc=d
 
-camBa=b
+camBa=[0,0]
+camBa1=(BaCAMm*(math.pi))/180
 camBb=[0,0]
-cambc=[0,0]
+camBb1=(BbCAMm*(math.pi))/180
+cambc=b
 
 def line(a1, b1, m1, a2, b2, m2):
   int=[0,0]
@@ -144,10 +148,13 @@ else:
   UNDEFINEDE=0
   EWm=(EWa[1]-EWb[1])/(EWa[0]-EWb[0])
 #finds the intersection for camera views
-#
+if UNDEFINEDA == 0 or UNDEFINEDCAMAa == 1:
+  intCAMAaA,tCAMAaA=vertline(AWa,AWb,camAc,camAa1)
+else:
+  intCAMAaA,tCAMAaA=line(AWa,AWb,AWm,camAc,AaCAMm)
 
 #finds the coverage if the camera view is on the same wall/wall plane
-
+print camAa1, tCAMaA, intCAMaA
 
 #finds the coverage is the camera view falls upon more than one wall plane
 
