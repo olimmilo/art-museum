@@ -144,7 +144,7 @@ else:
   UNDEFINEDE=0
   EWm=(EWa[1]-EWb[1])/(EWa[0]-EWb[0])
 #finds the intersection for camera views
-
+#
 
 #finds the coverage if the camera view is on the same wall/wall plane
 
