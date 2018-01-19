@@ -1,3 +1,5 @@
+import math
+
 a=[0,0]
 b=[0,20]
 c=[22,20]
@@ -16,8 +18,34 @@ EWb=[22,6]
 angAa=120
 angAb=90
 
-angBb=300
+if angAa == 90 or angAa == 270:
+  UNDEFINEDCAMAa=true
+else:
+  UNDEFINEDCAMAa=false
+  AaCAMm=math.tan(math.radians(angAa))
+
+if angAb == 90 or angAb == 270:
+  UNDEFINEDCAMBb=true
+else:
+  UNDEFINEDCAMBb=false
+  AbCAMm=math.tan(math.radians(angAb))
+
+angBa=300
 angBb=270
+
+
+if angBa == 90 or angBa == 270:
+  UNDEFINEDCAMBa=true
+else:
+  UNDEFINEDCAMBa=false
+  BaCAMm=math.tan(math.radians(angBa))
+
+if angBb == 90 or angBb == 270:
+  UNDEFINEDCAMBb=true
+else:
+  UNDEFINEDCAMBb=false
+  BbCAMm=math.tan(math.radians(angBb))
+
 
 camAa=d
 camAb=[0,0]
@@ -89,8 +117,32 @@ def vertline(a1, b1, a2, b2):
 if (AWa[0]-AWb[0]) == 0:
   UNDEFINEDA=true
 else:
+  UNDEFINEDA=false
   AWm=(AWa[1]-AWb[1])/(AWa[0]-AWb[0])
 
+if (BWa[0]-BWb[0]) == 0:
+  UNDEFINEDC=true
+else:
+  UNDEFINEDB=false
+  BWm=(BWa[1]-BWb[1])/(BWa[0]-BWb[0])
+
+if (CWa[0]-CWb[0]) == 0:
+  UNDEFINEDC=true
+else:
+  UNDEFINEDC=false
+  CWm=(CWa[1]-CWb[1])/(CWa[0]-CWb[0])
+
+if (DWa[0]-DWb[0]) == 0:
+  UNDEFINEDD=true
+else:
+  UNDEFINEDD=false
+  DWm=(DWa[1]-DWb[1])/(DWa[0]-DWb[0])
+  
+if (EWa[0]-EWb[0]) == 0:
+  UNDEFINEDE=true
+else:
+  UNDEFINEDE=false
+  EWm=(EWa[1]-EWb[1])/(EWa[0]-EWb[0])
 #finds the intersection for camera views
 
 
