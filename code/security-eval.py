@@ -19,15 +19,15 @@ angAa=120
 angAb=90
 
 if angAa == 90 or angAa == 270:
-  UNDEFINEDCAMAa=true
+  UNDEFINEDCAMAa=1
 else:
-  UNDEFINEDCAMAa=false
+  UNDEFINEDCAMAa=o
   AaCAMm=math.tan(math.radians(angAa))
 
 if angAb == 90 or angAb == 270:
-  UNDEFINEDCAMBb=true
+  UNDEFINEDCAMBb=1
 else:
-  UNDEFINEDCAMBb=false
+  UNDEFINEDCAMBb=0
   AbCAMm=math.tan(math.radians(angAb))
 
 angBa=300
@@ -35,15 +35,15 @@ angBb=270
 
 
 if angBa == 90 or angBa == 270:
-  UNDEFINEDCAMBa=true
+  UNDEFINEDCAMBa=1
 else:
-  UNDEFINEDCAMBa=false
+  UNDEFINEDCAMBa=0
   BaCAMm=math.tan(math.radians(angBa))
 
 if angBb == 90 or angBb == 270:
-  UNDEFINEDCAMBb=true
+  UNDEFINEDCAMBb=1
 else:
-  UNDEFINEDCAMBb=false
+  UNDEFINEDCAMBb=0
   BbCAMm=math.tan(math.radians(angBb))
 
 
@@ -61,25 +61,25 @@ def line(a1, b1, m1, a2, b2, m2):
   int[1]=(m1*(int[0]-a1[0]))+a1[1]
   if a1[0] >= b1[0]:
     if (b1[0] >= int[0]) and (int[0] >= a1[0]):
-      t=true
+      t=1
     else:
-      t=false
+      t=0
   elif a1[0] <= b1[0]:
     if (a1[0] >= int[0]) and (int[0] >= b1[0]):
-      t=true
+      t=1
     else:
-      t=false
-  if t == true:
+      t=0
+  if t == 1:
     if a1[1] >= b1[1]:
       if (b1[1] >= int[1]) and (int[1] >= a1[1]):
-        t=true
+        t=1
       else:
-        t=false
+        t=0
     elif a1[1] <= b1[1]:
       if (a1[1] >= int[1]) and (int[1] >= b1[1]):
-        t=true
+        t=1
       else:
-        t=false
+        t=0
   return int,t
 
 def vertline(a1, b1, a2, b2):
@@ -93,55 +93,55 @@ def vertline(a1, b1, a2, b2):
     int[1]=(m*(a2[0]-a1[0]))+a1[1]
   if a1[0] >= b1[0]:
     if (b1[0] >= int[0]) and (int[0] >= a1[0]):
-      t=true
+      t=1
     else:
-      t=false
+      t=0
   elif a1[0] <= b1[0]:
     if (a1[0] >= int[0]) and (int[0] >= b1[0]):
-      t=true
+      t=1
     else:
-      t=false
-  if t == true:
+      t=0
+  if t == 1:
     if a1[1] >= b1[1]:
       if (b1[1] >= int[1]) and (int[1] >= a1[1]):
-        t=true
+        t=1
       else:
-        t=false
+        t=0
     elif a1[1] <= b1[1]:
       if (a1[1] >= int[1]) and (int[1] >= b1[1]):
-        t=true
+        t=1
       else:
-        t=false
+        t=0
   return int,t
 #finds the equations and limits for the moving walls
 if (AWa[0]-AWb[0]) == 0:
-  UNDEFINEDA=true
+  UNDEFINEDA=1
 else:
-  UNDEFINEDA=false
+  UNDEFINEDA=0
   AWm=(AWa[1]-AWb[1])/(AWa[0]-AWb[0])
 
 if (BWa[0]-BWb[0]) == 0:
-  UNDEFINEDC=true
+  UNDEFINEDC=1
 else:
-  UNDEFINEDB=false
+  UNDEFINEDB=0
   BWm=(BWa[1]-BWb[1])/(BWa[0]-BWb[0])
 
 if (CWa[0]-CWb[0]) == 0:
-  UNDEFINEDC=true
+  UNDEFINEDC=1
 else:
-  UNDEFINEDC=false
+  UNDEFINEDC=0
   CWm=(CWa[1]-CWb[1])/(CWa[0]-CWb[0])
 
 if (DWa[0]-DWb[0]) == 0:
-  UNDEFINEDD=true
+  UNDEFINEDD=1
 else:
-  UNDEFINEDD=false
+  UNDEFINEDD=0
   DWm=(DWa[1]-DWb[1])/(DWa[0]-DWb[0])
   
 if (EWa[0]-EWb[0]) == 0:
-  UNDEFINEDE=true
+  UNDEFINEDE=1
 else:
-  UNDEFINEDE=false
+  UNDEFINEDE=0
   EWm=(EWa[1]-EWb[1])/(EWa[0]-EWb[0])
 #finds the intersection for camera views
 
