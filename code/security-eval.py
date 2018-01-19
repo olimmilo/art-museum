@@ -55,7 +55,7 @@ else:
   camAa1=[(d[0]+math.sin(math.radians(angAa))),(d[1]+math.sin(math.radians(angAa)))]
 camAb=[0,0]
 
-if UNDEFINEDCAMAb == 1:
+if UNDEFINEDCAMBb == 1:
   camAb1=[d[0], 0.5]
 else:
   camAb1=[(d[0]+math.sin(math.radians(angAb))),(d[1]+math.sin(math.radians(angAb)))]
