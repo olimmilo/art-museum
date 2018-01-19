@@ -52,29 +52,29 @@ camAa=[0,0]
 if UNDEFINEDCAMAa == 1:
   camAa1=[d[0], 0.5]
 else:
-  camAa1=
+  camAa1=[(d[0]+math.sin(math.radians(angAa))),([d[1]+math.sin(math.radians(angAa)))]
 camAb=[0,0]
 
 if UNDEFINEDCAMAb == 1:
   camAb1=[d[0], 0.5]
 else:
-  camAb1=
+  camAb1=[(d[0]+math.sin(math.radians(angAb))),([d[1]+math.sin(math.radians(angAb)))]
 
 camAc=d
 
 camBa=[0,0]
 
 if UNDEFINEDCAMBa == 1:
-  camAa1=[d[0], 0.5]
+  camAa1=[b[0], 19.5]
 else:
-  camAa1=
+  camAa1=[(b[0]+math.sin(math.radians(angBa))),([b[1]+math.sin(math.radians(angBa)))]
 
 camBb=[0,0]
 
 if UNDEFINEDCAMBb == 1:
-  camAa1=[d[0], 0.5]
+  camAa1=[b[0], 19.5]
 else:
-  camAa1=
+  camAa1=[(b[0]+math.sin(math.radians(angBb))),([b[1]+math.sin(math.radians(angBb)))]
 
 cambc=b
 
