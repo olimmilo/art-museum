@@ -48,37 +48,19 @@ else:
 
 
 camAa=[0,0]
-
-if UNDEFINEDCAMAa == 1:
-  camAa1=[d[0], 0.5]
-else:
-  camAa1=[(d[0]+math.sin(math.radians(angAa))),(d[1]+math.sin(math.radians(angAa)))]
 camAb=[0,0]
-
-if UNDEFINEDCAMBb == 1:
-  camAb1=[d[0], 0.5]
-else:
-  camAb1=[(d[0]+math.sin(math.radians(angAb))),(d[1]+math.sin(math.radians(angAb)))]
-
 camAc=d
+camAa1=[(math.cos(math.radians(angAa))*0.5),(math.sin(math.radians(angAa))*0.5)]
+camAb1=[(math.cos(math.radians(angAb))*0.5),(math.sin(math.radians(angAb))*0.5)]
 
 camBa=[0,0]
-
-if UNDEFINEDCAMBa == 1:
-  camBa1=[b[0], 19.5]
-else:
-  camBa1=[(b[0]+math.sin(math.radians(angBa))),(b[1]+math.sin(math.radians(angBa)))]
-
 camBb=[0,0]
-
-if UNDEFINEDCAMBb == 1:
-  camBb1=[b[0], 19.5]
-else:
-  camBb1=[(b[0]+math.sin(math.radians(angBb))),(b[1]+math.sin(math.radians(angBb)))]
-
 cambc=b
+camBa1=[(math.cos(math.radians(angBa))*0.5),(math.sin(math.radians(angBa))*0.5)]
+camBb1=[(math.cos(math.radians(angBb))*0.5),(math.sin(math.radians(angBb))*0.5)]
 
-def line(a1, b1, m1, a2, b2, m2):
+#finds where the two lines intersect and if it falls within the first line
+def line(a1, b1, m1, a2, m2):
   int=[0,0]
   int[0]=((m1*a1[0])-a1[1]-(m2*a2[0])+a2[1])/(m1-m2)
   int[1]=(m1*(int[0]-a1[0]))+a1[1]
@@ -105,6 +87,7 @@ def line(a1, b1, m1, a2, b2, m2):
         t=0
   return int,t
 
+#finds where the two lines (one verticle) intersect, and if it fals within the first one
 def vertline(a1, b1, a2, b2):
   if (a1[0]-b1[0]) == 0:
     int=[a1[0],0]
@@ -167,13 +150,46 @@ else:
   UNDEFINEDE=0
   EWm=(EWa[1]-EWb[1])/(EWa[0]-EWb[0])
 #finds the intersection for camera views
-if UNDEFINEDA == 0 or UNDEFINEDCAMAa == 1:
-  intCAMAaA,tCAMAaA=vertline(AWa,AWb,camAc,camAa1)
+#all camAa
+if UNDEFINEDCAMAa == 1 or UNDEFINEDA == 1:
+  tWACAMA,intWACAMA=vertline(AWa,AWb,camAa,camAa1)
 else:
-  intCAMAaA,tCAMAaA=line(AWa,AWb,AWm,camAc,AaCAMm)
+  tWACAMA,intWACAMA=line(AWa,AWb,AWm,camAa,camAa1)
+  
+if UNDEFINEDCAMAa == 1 or UNDEFINEDB == 1:
+  tWBCAMA,intWBCAMA=vertline(BWa,BWb,camAa,camAa1)
+else:
+  tWBCAMA,intWBCAMA=line(BWa,BWb,BWm,camAa,camAa1)
+  
+if UNDEFINEDCAMAa == 1 or UNDEFINEDC == 1:
+  tWCCAMA,intWCCAMA=vertline(CWa,CWb,camAa,camAa1)
+else:
+  tWCCAMA,intWCCAMA=line(CWa,CWb,CWm,camAa,camAa1)
+  
+if UNDEFINEDCAMAa == 1 or UNDEFINEDD == 1:
+  tWDCAMA,intWDCAMA=vertline(DWa,DWb,camAa,camAa1)
+else:
+  tWDCAMA,intWDCAMA=line(DWa,DWb,DWm,camAa,camAa1)
+  
+if UNDEFINEDCAMAa == 1 or UNDEFINEDE == 1:
+  tWECAMA,intWECAMA=vertline(EWa,EWb,camAa,camAa1)
+else:
+  tWECAMA,intWECAMA=line(EWa,EWb,EWm,camAa,camAa1)
+  
+  
+#all camAb  
 
+  
+  
+#all camBa  
+
+  
+  
+#all camBb  
+
+  
 #finds the coverage if the camera view is on the same wall/wall plane
-print(camAa1,tCAMAaA,intCAMAaA)
+
 
 #finds the coverage is the camera view falls upon more than one wall plane
 
