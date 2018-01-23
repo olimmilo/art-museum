@@ -62,7 +62,7 @@ camBb1=[(math.cos(math.radians(angBb))*0.5),(math.sin(math.radians(angBb))*0.5)]
 #finds where the two lines intersect and if it falls within the first line
 def line(a1, b1, m1, a2, m2):
   sec=[0,0]
-  sec[0]=((m1*a1[0])-(m2*a2[0])+a2[1]-a1[0])/(m1-m2)
+  sec[0]=((m1*a1[0])-(m2*a2[0])+a2[1]-(a1[0]))/(m1-m2)
   sec[1]=(m1*(sec[0]-a1[0]))+a1[1]
   if a1[0] >= b1[0]:
     if (b1[0] >= sec[0]) and (sec[0] >= a1[0]):
@@ -154,27 +154,27 @@ else:
 if UNDEFINEDCAMAa == 1 or UNDEFINEDA == 1:
   tWACAMA,intWACAMA=vertline(AWa,AWb,camAa,camAa1)
 else:
-  tWACAMA,intWACAMA=line(AWa,AWb,AWm,camAa,camAa1)
+  tWACAMA,intWACAMA=line(AWa,AWb,AWm,camAa,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDB == 1:
   tWBCAMA,intWBCAMA=vertline(BWa,BWb,camAa,camAa1)
 else:
-  tWBCAMA,intWBCAMA=line(BWa,BWb,BWm,camAa,camAa1)
+  tWBCAMA,intWBCAMA=line(BWa,BWb,BWm,camAa,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDC == 1:
   tWCCAMA,intWCCAMA=vertline(CWa,CWb,camAa,camAa1)
 else:
-  tWCCAMA,intWCCAMA=line(CWa,CWb,CWm,camAa,camAa1)
+  tWCCAMA,intWCCAMA=line(CWa,CWb,CWm,camAa,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDD == 1:
   tWDCAMA,intWDCAMA=vertline(DWa,DWb,camAa,camAa1)
 else:
-  tWDCAMA,intWDCAMA=line(DWa,DWb,DWm,camAa,camAa1)
+  tWDCAMA,intWDCAMA=line(DWa,DWb,DWm,camAa,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDE == 1:
   tWECAMA,intWECAMA=vertline(EWa,EWb,camAa,camAa1)
 else:
-  tWECAMA,intWECAMA=line(EWa,EWb,EWm,camAa,camAa1)
+  tWECAMA,intWECAMA=line(EWa,EWb,EWm,camAa,AaCAMm)
   
   
 #all camAb  
