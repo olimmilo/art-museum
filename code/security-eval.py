@@ -50,14 +50,14 @@ else:
 camAa=[0,0]
 camAb=[0,0]
 camAc=d
-camAa1=[(math.cos(math.radians(angAa))*0.5),(math.sin(math.radians(angAa))*0.5)]
-camAb1=[(math.cos(math.radians(angAb))*0.5),(math.sin(math.radians(angAb))*0.5)]
+camAa1=[(math.cos(math.radians(angAa))*0.5)+22,(math.sin(math.radians(angAa))*0.5)]
+camAb1=[(math.cos(math.radians(angAb))*0.5)+22,(math.sin(math.radians(angAb))*0.5)]
 
 camBa=[0,0]
 camBb=[0,0]
 cambc=b
-camBa1=[(math.cos(math.radians(angBa))*0.5),(math.sin(math.radians(angBa))*0.5)]
-camBb1=[(math.cos(math.radians(angBb))*0.5),(math.sin(math.radians(angBb))*0.5)]
+camBa1=[(math.cos(math.radians(angBa))*0.5),(math.sin(math.radians(angBa))*0.5)+20]
+camBb1=[(math.cos(math.radians(angBb))*0.5),(math.sin(math.radians(angBb))*0.5)+20]
 
 #finds where the two lines intersect and if it falls within the first line
 def line(a1, b1, m1, a2, m2):
