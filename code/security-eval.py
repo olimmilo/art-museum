@@ -204,4 +204,4 @@ else:
 
 
 #divides sumative coverage by all surface on which paintings can be hung and multiplies by 100 to give percent
-print(tWACAMA,intWACAM)
+print(tWACAMA,intWACAMA)
