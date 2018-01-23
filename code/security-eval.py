@@ -61,7 +61,8 @@ camBb1=[(math.cos(math.radians(angBb))*0.5),(math.sin(math.radians(angBb))*0.5)]
 
 #finds where the two lines intersect and if it falls within the first line
 def line(a1, b1, m1, a2, m2):
-  sec=[(((m1*a1[0])-a1[1]-(m2*a2[0])+a2[1])/(m1-m2)),0]
+  sec=[0,0]
+  sec[0]=((m1*a1[0])-a1[1]-(m2*a2[0])+a2[1])/(m1-m2)
   sec[1]=(m1*(sec[0]-a1[0]))+a1[1]
   if a1[0] >= b1[0]:
     if (b1[0] >= sec[0]) and (sec[0] >= a1[0]):
