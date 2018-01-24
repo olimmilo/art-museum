@@ -81,7 +81,7 @@ def line(a1, b1, m1, a2, m2):
       t=1
     else:
       t=0
-  if t=1:
+  if t == 1:
     if a1[1] <= b1[1]:
       if (a1[1] <= sec[1]) and (b1[1] >= sec[1]):
         t=1
