@@ -60,8 +60,6 @@ camAc=d
 camAa1=[(math.cos(math.radians(angAa))*0.5)+22,(math.sin(math.radians(angAa))*0.5)]
 camAb1=[(math.cos(math.radians(angAb))*0.5)+22,(math.sin(math.radians(angAb))*0.5)]
 
-print((math.radians((angAa))))
-
 camBa=[0,0]
 camBb=[0,0]
 cambc=b
@@ -229,7 +227,6 @@ if tWDCAMAa == 1:
 
 if tWECAMAa == 1:
   draw.line((camAc[0]*100, height-(camAc[1]*100),secWECAMAa[0]*100, height-(secWECAMAa[1]*100)), width=10, fill="red")
-print(AWa,AWb,camAc,camAa1)
-print(tWECAMAa)
+
 #image saving and testing
-#im.show()
+im.show()
