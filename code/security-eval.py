@@ -303,6 +303,7 @@ draw.line((d[0]*100, d[1]*100, a[0]*100, a[1]*100), width=20, fill="black")
 draw.line((a[0]*100, height-(a[1]*100), (a[0]+2)*100, height-(a[1]*100)), width=40, fill="green")
 draw.line((c[0]*100, height-(c[1]*100), (c[0]-2)*100, height-(c[1]*100)), width=40, fill="green")
 
+"""
 #CAMAa potentials
 if tWACAMAa == 1:
   draw.line((camAc[0]*100, height-(camAc[1]*100),secWACAMAa[0]*100, height-(secWACAMAa[1]*100)), width=10, fill="red")
@@ -367,4 +368,5 @@ if tWDCAMBb == 1:
 if tWECAMBb == 1:
   draw.line((camBc[0]*100, height-(camBc[1]*100),secWECAMBb[0]*100, height-(secWECAMBb[1]*100)), width=10, fill="red")
 #image saving and testing
+"""
 im.show()
