@@ -227,7 +227,7 @@ if tWDCAMAa == 1:
 
 if tWECAMAa == 1:
   draw.line((camAc[0]*100, height-(camAc[1]*100),secWECAMAa[0]*100, height-(secWECAMAa[1]*100)), width=10, fill="red")
-
+print(AWa,AWb,camAc,camAa1)
 print(tWECAMAa)
 #image saving and testing
 #im.show()
