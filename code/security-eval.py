@@ -228,8 +228,8 @@ draw.line((b[0]*100, b[1]*100, c[0]*100, c[1]*100), width=10, fill="black")
 draw.line((c[0]*100, c[1]*100, d[0]*100, d[1]*100), width=10, fill="black")
 draw.line((d[0]*100, d[1]*100, a[0]*100, a[1]*100), width=10, fill="black")
 
-draw.line((a[0]*100, a[1]*100, (a[0]+2)*100, a[1]*100), width=10, fill="green")
-draw.line((c[0]*100, c[1]*100, (c[0]+2)*100, c[1]*100), width=10, fill="green")
+draw.line((a[0]*100, height-(a[1]*100), (a[0]+2)*100, height-(a[1]*100)), width=15, fill="green")
+draw.line((c[0]*100, height-(c[1]*100), (c[0]+2)*100, height-(c[1]*100)), width=15, fill="green")
 
 
 
