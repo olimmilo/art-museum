@@ -1,6 +1,6 @@
 import math
 from PIL import Image, ImageDraw
-im = Image.new("RGB", (20, 22), "white")
+im = Image.new("RGB", (2000, 2200), "white")
 
 a=[0,0]
 b=[0,20]
