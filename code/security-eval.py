@@ -211,4 +211,4 @@ else:
 
 #image manipulation
 
-Image.show(im)
+im.show()
