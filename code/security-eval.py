@@ -161,6 +161,32 @@ if UNDEFINEDCAMAa == 1 or UNDEFINEDE == 1:
 else:
   tWECAMAa,secWECAMAa=line(EWa,EWb,EWm,camAc,AaCAMm)
   
+#all camAb
+if UNDEFINEDCAMAb == 1 or UNDEFINEDA == 1:
+  tWACAMAb,secWACAMAb=vertline(AWa,AWb,camAc,camAb1)
+else:
+  tWACAMAb,secWACAMAb=line(AWa,AWb,AWm,camAc,AbCAMm)
+  
+if UNDEFINEDCAMAb == 1 or UNDEFINEDB == 1:
+  tWBCAMAb,secWBCAMAb=vertline(BWa,BWb,camAc,camAb1)
+else:
+  tWBCAMAb,secWBCAMAb=line(BWa,BWb,BWm,camAc,AbCAMm)
+  
+if UNDEFINEDCAMAb == 1 or UNDEFINEDC == 1:
+  tWCCAMAb,secWCCAMAb=vertline(CWa,CWb,camAc,camAb1)
+else:
+  tWCCAMAb,secWCCAMAb=line(CWa,CWb,CWm,camAc,AbCAMm)
+  
+if UNDEFINEDCAMAb == 1 or UNDEFINEDD == 1:
+  tWDCAMAb,secWDCAMAb=vertline(DWa,DWb,camAc,camAb1)
+else:
+  tWDCAMAb,secWDCAMAb=line(DWa,DWb,DWm,camAc,AbCAMm)
+  
+if UNDEFINEDCAMAb == 1 or UNDEFINEDE == 1:
+  tWECAMAb,secWECAMAb=vertline(EWa,EWb,camAc,camAb1)
+else:
+  tWECAMAb,secWECAMAb=line(EWa,EWb,EWm,camAc,AbCAMm)
+  
   
 #all camAb  
 
@@ -227,6 +253,22 @@ if tWDCAMAa == 1:
 
 if tWECAMAa == 1:
   draw.line((camAc[0]*100, height-(camAc[1]*100),secWECAMAa[0]*100, height-(secWECAMAa[1]*100)), width=10, fill="red")
+  
+#CAMAb potentials
+if tWACAMAb == 1:
+  draw.line((camAc[0]*100, height-(camAc[1]*100),secWACAMAb[0]*100, height-(secWACAMAb[1]*100)), width=10, fill="red")
+
+if tWBCAMAb == 1:
+  draw.line((camAc[0]*100, height-(camAc[1]*100),secWBCAMAb[0]*100, height-(secWBCAMAb[1]*100)), width=10, fill="red")
+
+if tWCCAMAb == 1:
+  draw.line((camAc[0]*100, height-(camAc[1]*100),secWCCAMAb[0]*100, height-(secWCCAMAb[1]*100)), width=10, fill="red")
+
+if tWDCAMAb == 1:
+  draw.line((camAc[0]*100, height-(camAc[1]*100),secWDCAMAb[0]*100, height-(secWDCAMAb[1]*100)), width=10, fill="red")
+
+if tWECAMAb == 1:
+  draw.line((camAc[0]*100, height-(camAc[1]*100),secWECAMAb[0]*100, height-(secWECAMAb[1]*100)), width=10, fill="red")
 
 #image saving and testing
 im.show()
