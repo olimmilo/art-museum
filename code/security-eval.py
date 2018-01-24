@@ -218,9 +218,7 @@ else:
 
 #draw.line((camAc[0]*100, height-(camAc[1]*100)),(secWACAMAa[0]*100, height-(secWACAMAa[1]*100)), width=10, fill="purple")
 
-#draw.line((500,500),(0,0),width=10,fill="red")
-
-draw.line((500, 500), (0, 500), width=10, fill="purple")
+#draw.line((500,500, 0,0),width=10,fill="red")
 
 #walls, doors, and camera locations
 draw.line((AWa[0]*100, height-(AWa[1]*100), AWb[0]*100, height-(AWb[1]*100)), width=10, fill="purple")
