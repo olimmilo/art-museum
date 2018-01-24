@@ -92,7 +92,7 @@ def line(a1, b1, m1, a2, m2):
         t=1
       else:
         t=0
-  return sec,t
+  return t,sec
 
 #finds where the two lines (one verticle) intersect, and if it fals within the first one
 def vertline(a1, b1, a2, b2):
@@ -125,7 +125,7 @@ def vertline(a1, b1, a2, b2):
         t=1
       else:
         t=0
-  return sec,t
+  return t,sec
 #finds the equations and limits for the moving walls
 if (AWa[0]-AWb[0]) == 0:
   UNDEFINEDA=1
@@ -231,7 +231,7 @@ draw.line((d[0]*100, d[1]*100, a[0]*100, a[1]*100), width=20, fill="black")
 draw.line((a[0]*100, height-(a[1]*100), (a[0]+2)*100, height-(a[1]*100)), width=40, fill="green")
 draw.line((c[0]*100, height-(c[1]*100), (c[0]-2)*100, height-(c[1]*100)), width=40, fill="green")
 
-#draw.line((camAc[0]*100, height-(camAc[1]*100)), (secWACAMAa[0]*100, height-(secWACAMAa[1]*100)), width=10, fill="red")
+draw.line((camAc[0]*100, height-(camAc[1]*100)), (secWACAMAa[0]*100, height-(secWACAMAa[1]*100)), width=10, fill="red")
 
 print(secWACAMAa)
 
