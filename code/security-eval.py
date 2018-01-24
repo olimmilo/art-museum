@@ -188,7 +188,59 @@ if UNDEFINEDCAMAb == 1 or UNDEFINEDE == 1:
   tWECAMAb,secWECAMAb=vertline(EWa,EWb,camAc,camAb1)
 else:
   tWECAMAb,secWECAMAb=line(EWa,EWb,EWm,camAc,AbCAMm)
+
   
+#all camBa
+if UNDEFINEDCAMBa == 1 or UNDEFINEDA == 1:
+  tWACAMBa,secWACAMBa=vertline(AWa,AWb,camBc,camBa1)
+else:
+  tWACAMBa,secWACAMBa=line(AWa,AWb,AWm,camBc,BaCAMm)
+  
+if UNDEFINEDCAMBa == 1 or UNDEFINEDB == 1:
+  tWBCAMBa,secWBCAMBa=vertline(BWa,BWb,camBc,camBa1)
+else:
+  tWBCAMBa,secWBCAMBa=line(BWa,BWb,BWm,camBc,BaCAMm)
+  
+if UNDEFINEDCAMBa == 1 or UNDEFINEDC == 1:
+  tWCCAMBa,secWCCAMBa=vertline(CWa,CWb,camBc,camBa1)
+else:
+  tWCCAMBa,secWCCAMBa=line(CWa,CWb,CWm,camBc,BaCAMm)
+  
+if UNDEFINEDCAMBa == 1 or UNDEFINEDD == 1:
+  tWDCAMBa,secWDCAMBa=vertline(DWa,DWb,camBc,camBa1)
+else:
+  tWDCAMBa,secWDCAMBa=line(DWa,DWb,DWm,camBc,BaCAMm)
+  
+if UNDEFINEDCAMBa == 1 or UNDEFINEDE == 1:
+  tWECAMBa,secWECAMBa=vertline(EWa,EWb,camBc,camBa1)
+else:
+  tWECAMBa,secWECAMBa=line(EWa,EWb,EWm,camBc,BaCAMm)
+    
+#all camBb
+if UNDEFINEDCAMBb == 1 or UNDEFINEDA == 1:
+  tWACAMBb,secWACAMBb=vertline(AWa,AWb,camBc,camBb1)
+else:
+  tWACAMBb,secWACAMBb=line(AWa,AWb,AWm,camBc,BbCAMm)
+  
+if UNDEFINEDCAMBb == 1 or UNDEFINEDB == 1:
+  tWBCAMBb,secWBCAMBb=vertline(BWa,BWb,camBc,camBb1)
+else:
+  tWBCAMBb,secWBCAMBb=line(BWa,BWb,BWm,camBc,BbCAMm)
+  
+if UNDEFINEDCAMBb == 1 or UNDEFINEDC == 1:
+  tWCCAMBb,secWCCAMBb=vertline(CWa,CWb,camBc,camBb1)
+else:
+  tWCCAMBb,secWCCAMBb=line(CWa,CWb,CWm,camBc,BbCAMm)
+  
+if UNDEFINEDCAMBb == 1 or UNDEFINEDD == 1:
+  tWDCAMBb,secWDCAMBb=vertline(DWa,DWb,camBc,camBb1)
+else:
+  tWDCAMBb,secWDCAMBb=line(DWa,DWb,DWm,camBc,BbCAMm)
+  
+if UNDEFINEDCAMBb == 1 or UNDEFINEDE == 1:
+  tWECAMBb,secWECAMBb=vertline(EWa,EWb,camBc,camBb1)
+else:
+  tWECAMBb,secWECAMBb=line(EWa,EWb,EWm,camBc,BbCAMm)
   
 #all camAb  
 
@@ -272,5 +324,36 @@ if tWDCAMAb == 1:
 if tWECAMAb == 1:
   draw.line((camAc[0]*100, height-(camAc[1]*100),secWECAMAb[0]*100, height-(secWECAMAb[1]*100)), width=10, fill="red")
 
+#CAMBa potentials
+if tWACAMBa == 1:
+  draw.line((camBc[0]*100, height-(camBc[1]*100),secWACAMBa[0]*100, height-(secWACAMBa[1]*100)), width=10, fill="red")
+
+if tWBCAMBa == 1:
+  draw.line((camBc[0]*100, height-(camBc[1]*100),secWBCAMBa[0]*100, height-(secWBCAMBa[1]*100)), width=10, fill="red")
+
+if tWCCAMBa == 1:
+  draw.line((camBc[0]*100, height-(camBc[1]*100),secWCCAMBa[0]*100, height-(secWCCAMBa[1]*100)), width=10, fill="red")
+
+if tWDCAMBa == 1:
+  draw.line((camBc[0]*100, height-(camBc[1]*100),secWDCAMBa[0]*100, height-(secWDCAMBa[1]*100)), width=10, fill="red")
+
+if tWECAMBa == 1:
+  draw.line((camBc[0]*100, height-(camBc[1]*100),secWECAMBa[0]*100, height-(secWECAMBa[1]*100)), width=10, fill="red")
+  
+#CAMBa potentials
+if tWACAMBb == 1:
+  draw.line((camBc[0]*100, height-(camBc[1]*100),secWACAMBb[0]*100, height-(secWACAMBb[1]*100)), width=10, fill="red")
+
+if tWBCAMBb == 1:
+  draw.line((camBc[0]*100, height-(camBc[1]*100),secWBCAMBb[0]*100, height-(secWBCAMBb[1]*100)), width=10, fill="red")
+
+if tWCCAMBb == 1:
+  draw.line((camBc[0]*100, height-(camBc[1]*100),secWCCAMBb[0]*100, height-(secWCCAMBb[1]*100)), width=10, fill="red")
+
+if tWDCAMBb == 1:
+  draw.line((camBc[0]*100, height-(camBc[1]*100),secWDCAMBb[0]*100, height-(secWDCAMBb[1]*100)), width=10, fill="red")
+
+if tWECAMBb == 1:
+  draw.line((camBc[0]*100, height-(camBc[1]*100),secWECAMBb[0]*100, height-(secWECAMBb[1]*100)), width=10, fill="red")
 #image saving and testing
 im.show()
