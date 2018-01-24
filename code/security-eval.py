@@ -216,7 +216,7 @@ else:
 
 #image manipulation
 
-draw.line((camAc[0]*100, height-(camAc[1]*100)),(secWACAMAa[0]*100, height-(secWACAMAa[1]*100)), width=10, fill="purple")
+#draw.line((camAc[0]*100, height-(camAc[1]*100)),(secWACAMAa[0]*100, height-(secWACAMAa[1]*100)), width=10, fill="purple")
 
 draw.line((500,500),(0,0),width=10,fill="red")
 
