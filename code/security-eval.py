@@ -231,7 +231,7 @@ draw.line((d[0]*100, d[1]*100, a[0]*100, a[1]*100), width=20, fill="black")
 draw.line((a[0]*100, height-(a[1]*100), (a[0]+2)*100, height-(a[1]*100)), width=40, fill="green")
 draw.line((c[0]*100, height-(c[1]*100), (c[0]-2)*100, height-(c[1]*100)), width=40, fill="green")
 
-draw.point((d[0]*100,height-(d[1]*100)), fill="grey")
+draw.line((camAc[0]*100,height-(camAc[1]*100)),(intWACAMA[0]*100,height-(intWACAMA[1]*100)) width=10 fill="red")
 
 
 
