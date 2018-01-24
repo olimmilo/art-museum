@@ -71,27 +71,16 @@ def line(a1, b1, m1, a2, m2):
   sec=[0,0]
   sec[0]=((m1*a1[0])-(m2*a2[0])+a2[1]-(a1[0]))/(m1-m2)
   sec[1]=(m1*(sec[0]-a1[0]))+a1[1]
-  if a1[0] >= b1[0]:
-    if (b1[0] >= sec[0]) and (sec[0] >= a1[0]):
+  if a1[0] <= b1[0]:
+    if (a1[0] <= sec[0]) and (b1[0] >= sec[0]):
       t=1
     else:
       t=0
-  elif a1[0] <= b1[0]:
-    if (a1[0] >= sec[0]) and (sec[0] >= b1[0]):
+  elif a1[0] >= b1[0]:
+    if (a1[0] >= sec[0]) and (b1[0] <= sec[0]):
       t=1
     else:
       t=0
-  if t == 1:
-    if a1[1] >= b1[1]:
-      if (b1[1] >= sec[1]) and (sec[1] >= a1[1]):
-        t=1
-      else:
-        t=0
-    elif a1[1] <= b1[1]:
-      if (a1[1] >= sec[1]) and (sec[1] >= b1[1]):
-        t=1
-      else:
-        t=0
   return t,sec
 
 #finds where the two lines (one verticle) intersect, and if it fals within the first one
@@ -104,27 +93,16 @@ def vertline(a1, b1, a2, b2):
     sec=[a2[0],0]
     m=(a1[1]-b1[1])/(a1[0]-b1[0])
     sec[1]=(m*(a2[0]-a1[0]))+a1[1]
-  if a1[0] >= b1[0]:
-    if (b1[0] >= sec[0]) and (sec[0] >= a1[0]):
+  if a1[0] <= b1[0]:
+    if (a1[0] <= sec[0]) and (b1[0] >= sec[0]):
       t=1
     else:
       t=0
-  elif a1[0] <= b1[0]:
-    if (a1[0] >= sec[0]) and (sec[0] >= b1[0]):
+  elif a1[0] >= b1[0]:
+    if (a1[0] >= sec[0]) and (b1[0] <= sec[0]):
       t=1
     else:
       t=0
-  if t == 1:
-    if a1[1] >= b1[1]:
-      if (b1[1] >= sec[1]) and (sec[1] >= a1[1]):
-        t=1
-      else:
-        t=0
-    elif a1[1] <= b1[1]:
-      if (a1[1] >= sec[1]) and (sec[1] >= b1[1]):
-        t=1
-      else:
-        t=0
   return t,sec
 #finds the equations and limits for the moving walls
 if (AWa[0]-AWb[0]) == 0:
