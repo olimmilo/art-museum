@@ -1,4 +1,6 @@
 import math
+from PIL import Image, ImageDraw
+im = Image.new('RGB',(22,20),(100,100))
 
 a=[0,0]
 b=[0,20]
@@ -204,4 +206,9 @@ else:
 
 
 #divides sumative coverage by all surface on which paintings can be hung and multiplies by 100 to give percent
-print(tWECAMA,intWECAMA)
+
+
+
+#image manipulation
+
+
