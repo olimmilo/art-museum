@@ -16,7 +16,7 @@ DWb=[17,6]
 EWa=[17,6]
 EWb=[22,6]
 
-width=((c[0]-a[0])*100
+width=(c[0]-a[0])*100
 height=(c[1]-a[1])*100
 
 im = Image.new("RGB", (width,height), "white")
