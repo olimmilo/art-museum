@@ -159,29 +159,29 @@ else:
 #finds the intersection for camera views
 #all camAa
 if UNDEFINEDCAMAa == 1 or UNDEFINEDA == 1:
-  tWACAMA,secWACAMA=vertline(AWa,AWb,camAc,camAa1)
+  tWACAMA,secWACAMAa=vertline(AWa,AWb,camAc,camAa1)
 else:
-  tWACAMA,secWACAMA=line(AWa,AWb,AWm,camAc,AaCAMm)
+  tWACAMA,secWACAMAa=line(AWa,AWb,AWm,camAc,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDB == 1:
-  tWBCAMA,secWBCAMA=vertline(BWa,BWb,camAc,camAa1)
+  tWBCAMA,secWBCAMAa=vertline(BWa,BWb,camAc,camAa1)
 else:
-  tWBCAMA,secWBCAMA=line(BWa,BWb,BWm,camAc,AaCAMm)
+  tWBCAMA,secWBCAMAa=line(BWa,BWb,BWm,camAc,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDC == 1:
-  tWCCAMA,secWCCAMA=vertline(CWa,CWb,camAc,camAa1)
+  tWCCAMA,secWCCAMAa=vertline(CWa,CWb,camAc,camAa1)
 else:
-  tWCCAMA,secWCCAMA=line(CWa,CWb,CWm,camAc,AaCAMm)
+  tWCCAMA,secWCCAMAa=line(CWa,CWb,CWm,camAc,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDD == 1:
-  tWDCAMA,secWDCAMA=vertline(DWa,DWb,camAc,camAa1)
+  tWDCAMA,secWDCAMAa=vertline(DWa,DWb,camAc,camAa1)
 else:
-  tWDCAMA,secWDCAMA=line(DWa,DWb,DWm,camAc,AaCAMm)
+  tWDCAMA,secWDCAMAa=line(DWa,DWb,DWm,camAc,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDE == 1:
-  tWECAMA,secWECAMA=vertline(EWa,EWb,camAc,camAa1)
+  tWECAMA,secWECAMAa=vertline(EWa,EWb,camAc,camAa1)
 else:
-  tWECAMA,secWECAMA=line(EWa,EWb,EWm,camAc,AaCAMm)
+  tWECAMA,secWECAMAa=line(EWa,EWb,EWm,camAc,AaCAMm)
   
   
 #all camAb  
@@ -231,8 +231,8 @@ draw.line((d[0]*100, d[1]*100, a[0]*100, a[1]*100), width=20, fill="black")
 draw.line((a[0]*100, height-(a[1]*100), (a[0]+2)*100, height-(a[1]*100)), width=40, fill="green")
 draw.line((c[0]*100, height-(c[1]*100), (c[0]-2)*100, height-(c[1]*100)), width=40, fill="green")
 
-draw.line((camAc[0]*100, height-(camAc[1]*100)), (secWACAMAa[0]*100, height-(secWACAMAa[1]*100)), width=10, fill="red")
+#draw.line((camAc[0]*100, height-(camAc[1]*100)), (secWACAMAa[0]*100, height-(secWACAMAa[1]*100)), width=10, fill="red")
 
+print(secWACAMAa)
 
-
-im.show()
+#im.show()
