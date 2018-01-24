@@ -223,13 +223,13 @@ draw.line((CWa[0]*100, height-(CWa[1]*100), CWb[0]*100, height-(CWb[1]*100)), wi
 draw.line((DWa[0]*100, height-(DWa[1]*100), DWb[0]*100, height-(DWb[1]*100)), width=10, fill="purple")
 draw.line((EWa[0]*100, height-(EWa[1]*100), EWb[0]*100, height-(EWb[1]*100)), width=10, fill="purple")
 
-draw.line((a[0]*100, a[1]*100, b[0]*100, b[1]*100), width=10, fill="black")
-draw.line((b[0]*100, b[1]*100, c[0]*100, c[1]*100), width=10, fill="black")
-draw.line((c[0]*100, c[1]*100, d[0]*100, d[1]*100), width=10, fill="black")
-draw.line((d[0]*100, d[1]*100, a[0]*100, a[1]*100), width=10, fill="black")
+draw.line((a[0]*100, a[1]*100, b[0]*100, b[1]*100), width=20, fill="black")
+draw.line((b[0]*100, b[1]*100, c[0]*100, c[1]*100), width=20, fill="black")
+draw.line((c[0]*100, c[1]*100, d[0]*100, d[1]*100), width=20, fill="black")
+draw.line((d[0]*100, d[1]*100, a[0]*100, a[1]*100), width=20, fill="black")
 
-draw.line((a[0]*100, height-(a[1]*100), (a[0]+2)*100, height-(a[1]*100)), width=15, fill="green")
-draw.line((c[0]*100, height-(c[1]*100), (c[0]+2)*100, height-(c[1]*100)), width=15, fill="green")
+draw.line((a[0]*100, height-(a[1]*100), (a[0]+2)*100, height-(a[1]*100)), width=40, fill="green")
+draw.line((c[0]*100, height-(c[1]*100), (c[0]+2)*100, height-(c[1]*100)), width=40, fill="green")
 
 
 
