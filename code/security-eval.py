@@ -1,6 +1,6 @@
 import math
 from PIL import Image, ImageDraw
-im = Image.new('RGB',(22,20),(100,100))
+im = Image.new("RGB", (512, 512), "white")
 
 a=[0,0]
 b=[0,20]
@@ -211,4 +211,4 @@ else:
 
 #image manipulation
 
-
+Image.show(im)
