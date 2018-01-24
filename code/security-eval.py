@@ -16,8 +16,10 @@ DWb=[17,6]
 EWa=[17,6]
 EWb=[22,6]
 
+width=((c[0]-a[0])*100
+height=(c[1]-a[1])*100
 
-im = Image.new("RGB", ((c[0]-a[0])*100,(c[1]-a[1])*100 ), "white")
+im = Image.new("RGB", (width,height), "white")
 draw = ImageDraw.Draw(im)
 
 angAa=120
@@ -220,11 +222,11 @@ draw.line((b[0]*100, b[1]*100, c[0]*100, c[1]*100), width=10, fill="black")
 draw.line((c[0]*100, c[1]*100, d[0]*100, d[1]*100), width=10, fill="black")
 draw.line((d[0]*100, d[1]*100, a[0]*100, a[1]*100), width=10, fill="black")
 
-draw.line((AWa[0]*100, AWa[1]*100, AWb[0]*100, AWb[1]*100), width=10, fill="green")
-draw.line((BWa[0]*100, BWa[1]*100, BWb[0]*100, BWb[1]*100), width=10, fill="green")
-draw.line((CWa[0]*100, CWa[1]*100, CWb[0]*100, CWb[1]*100), width=10, fill="green")
-draw.line((DWa[0]*100, DWa[1]*100, DWb[0]*100, DWb[1]*100), width=10, fill="green")
-draw.line((EWa[0]*100, EWa[1]*100, EWb[0]*100, EWb[1]*100), width=10, fill="green")
+draw.line((AWa[0]*100, height-(AWa[1]*100), AWb[0]*100, height-(AWb[1]*100)), width=10, fill="green")
+draw.line((BWa[0]*100, height-(BWa[1]*100), BWb[0]*100, height-(BWb[1]*100)), width=10, fill="green")
+draw.line((CWa[0]*100, height-(CWa[1]*100), CWb[0]*100, height-(CWb[1]*100)), width=10, fill="green")
+draw.line((DWa[0]*100, height-(DWa[1]*100), DWb[0]*100, height-(DWb[1]*100)), width=10, fill="green")
+draw.line((EWa[0]*100, height-(EWa[1]*100), EWb[0]*100, height-(EWb[1]*100)), width=10, fill="green")
 
 
 
