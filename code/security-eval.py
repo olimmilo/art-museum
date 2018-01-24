@@ -159,29 +159,29 @@ else:
 #finds the intersection for camera views
 #all camAa
 if UNDEFINEDCAMAa == 1 or UNDEFINEDA == 1:
-  tWACAMA,secWACAMAa=vertline(AWa,AWb,camAc,camAa1)
+  tWACAMAa,secWACAMAa=vertline(AWa,AWb,camAc,camAa1)
 else:
-  tWACAMA,secWACAMAa=line(AWa,AWb,AWm,camAc,AaCAMm)
+  tWACAMAa,secWACAMAa=line(AWa,AWb,AWm,camAc,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDB == 1:
-  tWBCAMA,secWBCAMAa=vertline(BWa,BWb,camAc,camAa1)
+  tWBCAMAa,secWBCAMAa=vertline(BWa,BWb,camAc,camAa1)
 else:
-  tWBCAMA,secWBCAMAa=line(BWa,BWb,BWm,camAc,AaCAMm)
+  tWBCAMAa,secWBCAMAa=line(BWa,BWb,BWm,camAc,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDC == 1:
-  tWCCAMA,secWCCAMAa=vertline(CWa,CWb,camAc,camAa1)
+  tWCCAMAa,secWCCAMAa=vertline(CWa,CWb,camAc,camAa1)
 else:
-  tWCCAMA,secWCCAMAa=line(CWa,CWb,CWm,camAc,AaCAMm)
+  tWCCAMAa,secWCCAMAa=line(CWa,CWb,CWm,camAc,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDD == 1:
-  tWDCAMA,secWDCAMAa=vertline(DWa,DWb,camAc,camAa1)
+  tWDCAMAa,secWDCAMAa=vertline(DWa,DWb,camAc,camAa1)
 else:
-  tWDCAMA,secWDCAMAa=line(DWa,DWb,DWm,camAc,AaCAMm)
+  tWDCAMAa,secWDCAMAa=line(DWa,DWb,DWm,camAc,AaCAMm)
   
 if UNDEFINEDCAMAa == 1 or UNDEFINEDE == 1:
-  tWECAMA,secWECAMAa=vertline(EWa,EWb,camAc,camAa1)
+  tWECAMAa,secWECAMAa=vertline(EWa,EWb,camAc,camAa1)
 else:
-  tWECAMA,secWECAMAa=line(EWa,EWb,EWm,camAc,AaCAMm)
+  tWECAMAa,secWECAMAa=line(EWa,EWb,EWm,camAc,AaCAMm)
   
   
 #all camAb  
@@ -234,8 +234,21 @@ draw.line((d[0]*100, d[1]*100, a[0]*100, a[1]*100), width=20, fill="black")
 draw.line((a[0]*100, height-(a[1]*100), (a[0]+2)*100, height-(a[1]*100)), width=40, fill="green")
 draw.line((c[0]*100, height-(c[1]*100), (c[0]-2)*100, height-(c[1]*100)), width=40, fill="green")
 
-draw.line((camAc[0]*100, height-(camAc[1]*100),secWACAMAa[0]*100, height-(secWACAMAa[1]*100)), width=10, fill="red")
+#CAMAa potentials
+if tWACAMAa == 1:
+  draw.line((camAc[0]*100, height-(camAc[1]*100),secWACAMAa[0]*100, height-(secWACAMAa[1]*100)), width=10, fill="red")
 
-print(secWACAMAa)
+if tWBCAMAa == 1:
+  draw.line((camAc[0]*100, height-(camAc[1]*100),secWBCAMAa[0]*100, height-(secWBCAMAa[1]*100)), width=10, fill="red")
 
+if tWCCAMAa == 1:
+  draw.line((camAc[0]*100, height-(camAc[1]*100),secWCCAMAa[0]*100, height-(secWCCAMAa[1]*100)), width=10, fill="red")
+
+if tWDCAMAa == 1:
+  draw.line((camAc[0]*100, height-(camAc[1]*100),secWDCAMAa[0]*100, height-(secWDCAMAa[1]*100)), width=10, fill="red")
+
+if tWECAMAa == 1:
+  draw.line((camAc[0]*100, height-(camAc[1]*100),secWECAMAa[0]*100, height-(secWECAMAa[1]*100)), width=10, fill="red")
+
+#image saving and testing
 im.show()
