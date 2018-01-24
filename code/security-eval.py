@@ -211,6 +211,6 @@ else:
 
 
 #image manipulation
-draw.line((0, im.size[1], im.size[0], 0), fill=128)
+draw.line((0, im.size[1], im.size[0], 0), width=110, color="red")
 
 im.show()
