@@ -1,6 +1,7 @@
 import math
 from PIL import Image, ImageDraw
 im = Image.new("RGB", (2000, 2200), "white")
+draw = ImageDraw.Draw(im)
 
 a=[0,0]
 b=[0,20]
@@ -210,5 +211,6 @@ else:
 
 
 #image manipulation
+draw.line((0, im.size[1], im.size[0], 0), fill=128)
 
 im.show()
