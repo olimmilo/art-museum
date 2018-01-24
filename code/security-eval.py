@@ -1,7 +1,5 @@
 import math
 from PIL import Image, ImageDraw
-im = Image.new("RGB", (2000, 2200), "white")
-draw = ImageDraw.Draw(im)
 
 a=[0,0]
 b=[0,20]
@@ -17,6 +15,10 @@ DWa=[12,6]
 DWb=[17,6]
 EWa=[17,6]
 EWb=[22,6]
+
+
+im = Image.new("RGB", ((c[0]-a[0])*100,(c[1]-a[1])*100 ), "grey")
+draw = ImageDraw.Draw(im)
 
 angAa=120
 angAb=90
