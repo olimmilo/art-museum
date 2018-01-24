@@ -60,7 +60,7 @@ camAc=d
 camAa1=[(math.cos(math.radians(angAa))*0.5)+22,(math.sin(math.radians(angAa))*0.5)]
 camAb1=[(math.cos(math.radians(angAb))*0.5)+22,(math.sin(math.radians(angAb))*0.5)]
 
-print((math.cos((angAa))*0.5))
+print((math.radians((angAa))))
 
 camBa=[0,0]
 camBb=[0,0]
