@@ -81,9 +81,20 @@ def line(a1, b1, m1, a2, m2):
       t=1
     else:
       t=0
+  if t=1:
+    if a1[1] <= b1[1]:
+      if (a1[1] <= sec[1]) and (b1[1] >= sec[1]):
+        t=1
+      else:
+        t=0
+    elif a1[1] >= b1[1]:
+      if (a1[1] >= sec[1]) and (b1[1] <= sec[1]):
+        t=1
+      else:
+        t=0
   return t,sec
 
-#finds where the two lines (one verticle) intersect, and if it fals within the first one
+#finds where the two lines (one verticle) intersect, and if it falls within the first one
 def vertline(a1, b1, a2, b2):
   if (a1[0]-b1[0]) == 0:
     sec=[a1[0],0]
