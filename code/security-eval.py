@@ -211,6 +211,6 @@ else:
 
 
 #image manipulation
-draw.line((a[0], a[1], b[0], b[1]), width=10, fill="red")
+draw.line((a[0]*100, a[1]*100, b[0]*100, b[1]*100), width=10, fill="black")
 
 im.show()
