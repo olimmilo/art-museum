@@ -62,7 +62,7 @@ camAb1=[(math.cos(math.radians(angAb))*0.5)+22,(math.sin(math.radians(angAb))*0.
 
 camBa=[0,0]
 camBb=[0,0]
-cambc=b
+camBc=b
 camBa1=[(math.cos(math.radians(angBa))*0.5),(math.sin(math.radians(angBa))*0.5)+20]
 camBb1=[(math.cos(math.radians(angBb))*0.5),(math.sin(math.radians(angBb))*0.5)+20]
 
