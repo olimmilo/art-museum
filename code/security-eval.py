@@ -32,9 +32,9 @@ else:
   AaCAMm=math.tan(math.radians(angAa))
 
 if angAb == 90 or angAb == 270:
-  UNDEFINEDCAMBb=1
+  UNDEFINEDCAMAb=1
 else:
-  UNDEFINEDCAMBb=0
+  UNDEFINEDCAMAb=0
   AbCAMm=math.tan(math.radians(angAb))
 
 angBa=300
@@ -134,6 +134,8 @@ if (EWa[0]-EWb[0]) == 0:
 else:
   UNDEFINEDE=0
   EWm=(EWa[1]-EWb[1])/(EWa[0]-EWb[0])
+
+  
 #finds the intersection for camera views
 #all camAa
 if UNDEFINEDCAMAa == 1 or UNDEFINEDA == 1:
