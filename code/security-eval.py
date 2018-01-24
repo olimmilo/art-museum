@@ -22,8 +22,8 @@ height=(c[1]-a[1])*100
 im = Image.new("RGB", (width,height), "white")
 draw = ImageDraw.Draw(im)
 
-angAa=120
-angAb=90
+angAa=90
+angAb=120
 
 if angAa == 90 or angAa == 270:
   UNDEFINEDCAMAa=1
